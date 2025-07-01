@@ -279,7 +279,7 @@ a > p {
     .info {
         padding: 10px;
         position: relative;
-        top: 57.5%;
+        top: 56%;
         background-color: rgba(255, 255, 255, 0.212)
     }
 
@@ -315,7 +315,7 @@ a > p {
     .about-me {
         margin: 1rem 0 2rem 0.8rem;
     }
-    .about-me > p {
+    .about-me-text > p {
       width: 90%;
     }
     .skills-section {
