@@ -81,7 +81,7 @@ main {
     margin-right: 4rem;
     flex: 0.5;
 }
-#btn {
+#btn, #send-email {
     padding: 0.8rem 1.6rem;
     font-size: 1rem;
     background: gold;
@@ -95,7 +95,7 @@ main {
     display: flex;
     margin-bottom: 3rem;
 }
-#btn:hover {
+#btn:hover, #send-email:hover {
   background: #111;
   color: gold;
 }
@@ -257,6 +257,16 @@ a > p {
 
 #nav-bar {
     display: none;
+}
+#contact {
+    display: flex;
+    max-width: 500px;
+    flex-direction: column;
+}
+.email, .email-text {
+    font-size: 16px;
+    margin-bottom: 5px;
+    width: 100%;
 }
 
 /* Mobile phones */
