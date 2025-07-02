@@ -2,6 +2,7 @@ const quoteBox = document.getElementById("quote");
 const authors = document.getElementById("author");
 const navBar = document.getElementById("nav-bar");
 const navList = document.querySelector(".nav");
+const contactForm = document.getElementById("contact");
 
 let trigger = false;
 
@@ -28,3 +29,21 @@ const quotes = async () => {
 };
 
 quotes();
+
+emailjs.init("VO--XQN1OAIz7VLyO");
+
+contactForm.addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  emailjs.sendForm('service_4vb7viy', 'template_txijvtk', this)
+    .then(function() {
+      alert('Message sent successfully');
+      contactForm.reset();
+    }, function(error) {
+      console.log('FAILED...', error);
+      alert('Oops! Something went wrong');
+    });
+});
+
+
+
